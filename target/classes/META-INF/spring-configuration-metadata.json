@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "video.frame-extractor",
+      "type": "cn.lcy189.utils.FrameExtractorProperties",
+      "sourceType": "cn.lcy189.utils.FrameExtractorProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "video.frame-extractor.interval",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.lcy189.utils.FrameExtractorProperties"
+    },
+    {
+      "name": "video.frame-extractor.threshold",
+      "type": "java.lang.Double",
+      "sourceType": "cn.lcy189.utils.FrameExtractorProperties"
+    },
+    {
+      "name": "video.frame-extractor.video-frames-path",
+      "type": "java.lang.String",
+      "sourceType": "cn.lcy189.utils.FrameExtractorProperties"
+    }
+  ],
+  "hints": []
+}
