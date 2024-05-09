@@ -64,12 +64,13 @@ public class FrameExtractor {
                 BufferedImage bImage = null;
                 log.info("============开始运行视频提取帧，耗时较长============");
 
-                while (flag <= ftp) {
+                while (flag < ftp) {
                     //文件绝对路径+名字
                     String fileName = videoFramesPath + "/img_" + String.valueOf(flag) + ".jpg";
                     //文件储存对象
                     File outPut = new File(fileName);
                     //获取帧
+
                     frame = fFmpegFrameGrabber.grabImage();
                     //                System.out.println(frame);
                     if (frame != null) {
@@ -77,6 +78,9 @@ public class FrameExtractor {
                     }
 
                     //每interval帧捕获一次
+                    for (int i = 0; i < interval - 1; i++) {
+                        fFmpegFrameGrabber.grabImage();
+                    }
                     flag += interval;
                 }
                 log.info("============视频抽帧运行结束============");

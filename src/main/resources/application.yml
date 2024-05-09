@@ -11,5 +11,5 @@ spring:
 video:
   frame-extractor:
     videoFramesPath: E:\TEMP\ocr\outcome
-    interval: 5
+    interval: 30
     threshold: 0.8
